@@ -13,7 +13,7 @@
     <mt-tabbar v-model="selected">
       <mt-tab-item id="home">
         <img slot="icon" src="./assets/index.png">
-        首页1
+        首页22
       </mt-tab-item>
       <mt-tab-item id="member">
         <img slot="icon" src="./assets/member.png">
