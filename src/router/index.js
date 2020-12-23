@@ -6,10 +6,11 @@ import Cart from '@/components/Cart'
 import Search from '@/components/Search'
 import NewsList from '@/components/NewsList'
 import NewsDetail from '@/components/NewsList/datail'
-
+import PhotoList from '@/components/Photo'
 Vue.use(Router)
 
 export default new Router({
+  linkActiveClass:"link-active",
   routes: [
     {
       path: '/',
@@ -44,6 +45,12 @@ export default new Router({
       path: '/newsdatail',
       name: 'news.datail',
       component: NewsDetail
+    },
+    {
+      path: '/photolist',
+      name: 'photo.list',
+      component: PhotoList
     }
+
   ]
 })

@@ -1,5 +1,6 @@
 <template>
     <div class="new-list">
+        <nav-bar title="新闻列表"/>
         <ul>
             <li v-for="news in newslist" :key="news.id">
                 <div class="img-box">
@@ -11,6 +12,7 @@
                     <p class="title">{{news.title}}</p>
                     <p>{{news.descript}}</p>
                     <p>价格：{{news.price}}</p>
+                    <p>上传时间：{{news.time | coverTime("YYYY-MM-DD")}}</p>
                 </div>
             </li>
         </ul>
@@ -40,11 +42,10 @@
 
 <style scoped>
 .new-list{
-    padding: 30px 20px;
 }
 .new-list li{
     overflow: hidden;
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 .new-list li .img-box{
     width: 80px;

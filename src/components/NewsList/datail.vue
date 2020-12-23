@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p><span class="gopage" @click="$router.go(-1)"></span>我是新闻详情页</p>
+        <nav-bar title="新闻详情"/>
         <h2>{{detail.title}}</h2>
         <p>{{detail.content}}</p>
     </div>
@@ -31,9 +31,12 @@
 
 <style scoped>
 .gopage{
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
-    background: red;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
 }
 </style>

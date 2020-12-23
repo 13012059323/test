@@ -90,10 +90,7 @@
   table {
   	border-collapse: collapse;
   }
-  
-  html {
-  	overflow-y: scroll;
-  }
+
   
   .clearfix:after {
   	content: ".";
