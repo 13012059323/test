@@ -32,7 +32,7 @@
 
     const grids = [
         {id:1,src:src1,title:"新闻资讯",router:{name:'news.list'}},
-        {id:2,src:src2,title:"图文分享",router:{name:'photo.list'}},
+        {id:2,src:src2,title:"图文分享",router:{name:'photo.list',params:{categoryed:0}}},
         {id:3,src:src3,title:"商品展示",router:{name:'news.list'}},
         {id:4,src:src4,title:"资讯",    router:{name:'news.list'}},
         {id:5,src:src5,title:"在线留言",router:{name:'news.list'}},

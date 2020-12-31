@@ -47,7 +47,7 @@ export default new Router({
       component: NewsDetail
     },
     {
-      path: '/photolist',
+      path: '/photolist/:categoryed',
       name: 'photo.list',
       component: PhotoList
     }
